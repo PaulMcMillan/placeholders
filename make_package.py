@@ -1,7 +1,13 @@
+#!/usr/bin/env python3
 import io
 import os
 import sys
 import tarfile
+
+if len(sys.argv) < 2:
+    print("Usage:")
+    print("./make_package.py new_package_name 0.0.0a0")
+    exit()
 
 package_name = sys.argv[1]
 package_version = "0.0.0a0"
@@ -12,8 +18,6 @@ Name: {package_name}
 Version: {package_version}
 Summary: Placeholder package to shadow internal names.
 Home-page: https://github.com/paulmcmillan/placeholders
-Author: Paul McMillan
-Author-email: paul@mcmillan.ws
 License: MIT
 Description: This placeholder package exists to publicly claim an internal name, so that it cannot be used as part of a dependency confusion attack.
 """
