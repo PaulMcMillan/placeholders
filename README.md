@@ -5,6 +5,9 @@ nothing. This creates the minimally acceptable sdist that twine will
 upload. Please edit the metadata before using, and consider trying it
 out on the test pypi.
 
+Note that these archives are not installable, and do not even print a
+sensible error message. They contain no code at all.
+
 Use `make_package.py` like this:
 
 ```
