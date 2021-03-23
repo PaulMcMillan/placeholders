@@ -21,3 +21,5 @@ https://pypi.org/project/nflx-jira/0.0.0a0/
 ```
 
 You can also pass a version number as the second argument if you need something different than the default.
+
+This assumes you have `twine` [set up properly](https://packaging.python.org/tutorials/packaging-projects/#uploading-the-distribution-archives).
